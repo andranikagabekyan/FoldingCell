@@ -1,0 +1,31 @@
+@keyframes transformblock {
+  from {
+    height: 0;
+    -ms-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+
+  to {
+    -ms-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+
+.block {
+  width: 90%;
+  height: 200px;
+
+  &.red--block {
+
+    background-color: red;
+  }
+
+  &.blue--block {
+    background-color: blue;
+    width: 70%;
+    animation: transformblock 5s;
+    position: relative;
+  }
+}
